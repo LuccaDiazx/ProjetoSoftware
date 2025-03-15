@@ -1,7 +1,7 @@
 package Desafios;
 import java.util.Scanner;
 import java.util.Random;
-public class Desafios1 {
+public class Desafio1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

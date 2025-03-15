@@ -1,6 +1,6 @@
 package Desafios;
 import java.util.Scanner;
-public class Desafios2 {
+public class Desafio2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class Desafios2 {
 		break;
 		default:
 			System.out.println("Opção Inválida!");
-			return;
+		return;
 		}
 		System.out.printf("R$%.2f equivale %2f %s",valorReais ,valorConvertido,moeda);
 		
