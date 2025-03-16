@@ -6,28 +6,29 @@ public class Desafio8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        double soma = 0;
-        int cont = 0;
-        double numero;
+        int Soma = 0;
+        int Cont = 0;
+        int Numero;
         System.out.println("Digite números para calcular a média (Se quiser cancelar, digite 0)");
         
         do {
             System.out.print("Digite o número: ");
-            numero = sc.nextDouble();
+            Numero = sc.nextInt();
             
-            if (numero != 0) {
-                soma += numero;
-                cont++;
+            if (Numero != 0) {
+                Soma += Numero;
+                Cont++;
             }
-        } while (numero != 0);
+        } while (Numero != 0);
+        sc.close();
         
-        if (cont > 0) {
-            double media = soma / cont;
-            System.out.printf("A média dos números digitados é: %.2f\n" + media);
+        if (Cont > 0) {
+            double media = Soma / Cont;
+            System.out.printf("A média dos números digitados é: %.2f\n" , media);
         } else {
             System.out.println("Nenhum número válido foi digitado.");
         }
         
-        sc.close();
+        
     }
 }
