@@ -6,6 +6,7 @@ public class Desafio8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
+        double media;
         int Soma = 0;
         int Cont = 0;
         int Numero;
@@ -23,7 +24,7 @@ public class Desafio8 {
         sc.close();
         
         if (Cont > 0) {
-            double media = Soma / Cont;
+           media= (double) Soma/Cont;
             System.out.printf("A média dos números digitados é: %.2f\n" , media);
         } else {
             System.out.println("Nenhum número válido foi digitado.");
