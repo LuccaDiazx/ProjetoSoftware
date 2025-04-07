@@ -20,8 +20,36 @@ public class Main {
 			System.out.println("Valor Unitário:");
 			Roupa.Valor=sc.nextDouble();
 			
+			System.out.println("Informe a Quantidade de Roupas a ser Removida do Estoque:\n ");
+			int Quantidade =sc.nextInt();
+			Roupa.Decrementa(Quantidade);
 			
+			System.out.println("Informe a quantidade de roupas a ser adicionada ao estoque: ");
+            Quantidade = sc.nextInt();
+            
+            Roupa.Incrementa(Quantidade);
+            
+            System.out.println("Dados atualizados da roupa: ");
+            System.out.println("Marca: " + Roupa.Marca + ", Tipo: " + Roupa.Tipo + ", Tamanho: " + Roupa.Tamanho + ", Quantidade: " + Roupa.Quantidade + ", Valor Unitário: " + Roupa.Valor);
+            System.out.println("Valor total em estoque: " + Roupa.ValorTotal());
+            
+            
+            
+            
+            sc.nextLine();
+            
+
+            System.out.println("Deseja cadastrar outra roupa? (s/n)");
+            String resposta = sc.nextLine();
+            
+            if (resposta.equalsIgnoreCase("n")) {
+            	break; 
+			
+            }
+		}
+		
+		
+		sc.close();
 		}
 	}
 
-}
